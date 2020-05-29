@@ -39,7 +39,7 @@ while True:
 
 cv2.destroyAllWindows()
 
-margin_top = str(int((point1[1]/460)*100)) + "px"
+margin_top = str(point1[1]) + "px"
 margin_left = str(point1[0]) + "px"
 height = str(point2[1] - point1[1]) + "px"
 width = str(point2[0] - point1[0]) + "px"
