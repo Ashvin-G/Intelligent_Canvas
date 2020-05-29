@@ -29,8 +29,13 @@ while True:
     canvas = canvas * 255
 
     if point1 and point2:
-        cv2.rectangle(canvas, point1, point2, (0, 255, 0))
+        mid_point_x = int((point1[0] + point2[0])/2)
+        mid_point_y = int((point1[1] + point2[1])/2)
+        cv2.rectangle(canvas, point1, point2, (0, 0, 0))
+        text_height = (point2[1] - point1[1])/100
+        cv2.putText(canvas, "Textbox", (mid_point_x-50, mid_point_y), cv2.FONT_HERSHEY_DUPLEX, text_height, (0, 0, 0), 2)
 
+        
     cv2.imshow("canvas", canvas)
 
     key = cv2.waitKey(1)
@@ -48,7 +53,7 @@ f = open("index.html", "w")
 f.write("<!DOCTYPE html>\n")
 f.write("<html>\n")
 f.write("<body>\n")
-f.write("<input type=\"text\" id=\"fname\" name=\"fname\" style=\"margin-top:"+margin_top+"; margin-left: "+margin_left+"; height: "+height+"; width: "+width+"\">\n")
+f.write("<input type=\"text\" id=\"fname\" name=\"fname\" placeholder=\"Textbox\" style=\"margin-top:"+margin_top+"; margin-left: "+margin_left+"; height: "+height+"; width: "+width+";font-size:"+height+"; text-align:center;\">\n")
 f.write("</body>\n")
 f.write("</html>")
 f.close()
