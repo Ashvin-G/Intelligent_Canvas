@@ -1,7 +1,6 @@
 # Intelligent_Canvas
 This project is an attempt to implement a module of [Microsoft's Sketch2code](https://sketch2code.azurewebsites.net/)
 
-
 ### Prerequisites
 This program was implemented using Python 3.6 and uses two external libraries
 1. opencv
