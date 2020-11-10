@@ -18,5 +18,8 @@ $ pip install numpy
 2. Extract the top-left coordinate and bottom-right coordinate.
 3. Embed this position in HTML code.
 ```
+### Demo
+Here I'm drawing the textbox and the program will auto embed the coordinates in HTML code and generate html.index with textbox of relative size.
+![](demo/demo.gif)
 
  
