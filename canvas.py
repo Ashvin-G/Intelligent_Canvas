@@ -39,7 +39,7 @@ while True:
     cv2.imshow("canvas", canvas)
 
     key = cv2.waitKey(1)
-    if key == 27:
+    if key == ord('q'):
         break
 
 cv2.destroyAllWindows()

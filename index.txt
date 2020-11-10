@@ -1,6 +1,0 @@
-<!DOCTYPE html>
-<html>
-<body>
-<input type="text" id="fname" name="fname" style="margin-top:15px; margin-left: 58px; height: 50px; width: 1290px">
-</body>
-</html>
