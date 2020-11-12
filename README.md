@@ -18,7 +18,7 @@ $ pip install numpy
 3. Embed this position in HTML code.
 ```
 ### Demo
-Here I'm drawing the textbox and the program will auto embed the coordinates in HTML code and generate html.index with textbox of relative size.
+Here I'm drawing the textbox and the program will auto embed the coordinates in HTML code and generate index.html with textbox of relative size.
 ![](demo/demo.gif)
 
  
